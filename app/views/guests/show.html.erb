@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <h1>Name</h1><br>
+    <%= @guest.name %><br>
+    <h1>Occupation</h1><br>
+    <%= @guest.occupation %><br><br>
+
+    <!-- <h2>This guest has appeared on</h2> -->
+    <%= link_to "add an appearance" , appearance_path %>
+  </body>
+</html>

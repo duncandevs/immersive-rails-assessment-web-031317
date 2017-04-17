@@ -1,0 +1,8 @@
+<form action="<%= "/guests/#{@guest.id}/appearance"%>" method="post">
+  input episode number
+  <input type="text" name="episode">
+  rate guest on a scale (1-5)
+  <input type="number" name="rating">
+  <input type="hidden" name="authenticity_token" value="<%= form_authenticity_token %>">
+  <input type="submit" name="submit">
+</form>

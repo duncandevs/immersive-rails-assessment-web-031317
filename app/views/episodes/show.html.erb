@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+  <h1><%= "Episode #{@episode.number} - #{@episode.date.strftime("%B %d, %Y")}"%><h1><br>
+  <% if @guests.empty? %>
+    <h3>No guests have appeared on this episode</h3><br>
+  <% else %>
+    <h3>The following guests have appeared on this episode</h3><br>
+  <% end  %>
+  <% @guests.each do |guest| %>
+    <li><%= guest.name %></li>
+    <li><%= guest.occupation %></li>
+  <% end %>
+  </body>
+</html>
